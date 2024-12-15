@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>買取スマート | 簡単・安心の買取サービス</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/hero.css">
+	<link rel="stylesheet" href="css/page3.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/purchaseSection.css">
+	<link rel="stylesheet" href="css/jisseki.css">
+	<link rel="stylesheet" href="css/free-apprasial.css">
+	<link rel="stylesheet" href="css/review.css">
+	<link rel="stylesheet" href="css/shitenn.css">
+</head>
+
+<body>
+	<!-- ヘッダー -->
+	<header class="header">
+		<div class="container">
+			<div class="header-logo">
+				<img src="img/smartLogo.png" alt="買取スマートロゴ" />
+			</div>
+			<div class="header-contact">
+				<span>受付時間 9:00〜18:00（年中無休）</span>
+				<button class="line-button">LINEで無料査定</button>
+				<button class="call-button">0120-355-525</button>
+			</div>
+			<div class="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<nav class="header-nav">
+			<ul>
+				<li><a href="#">ホーム</a></li>
+				<li><a href="#">サービス内容</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<script>
+		// ハンバーガーメニューのトグル
+		const hamburger = document.querySelector('.hamburger-menu');
+		const nav = document.querySelector('.header-nav');
+
+		hamburger.addEventListener('click', () => {
+			nav.classList.toggle('active');
+		});
+	</script>
+
+	<!-- ヒーローセクション -->
+	<section class="hero">
+		<div class="heroBackground" style="
+    	    width: 100%; 
+        	background: url('img/heroBackground.png');
+        	background-size: cover; 
+        	background-position: center;">
+			<img src="img/heroTop.png" alt="説明テキスト" class="heropage-image">
+			<div class="hero-button-container">
+				<a href="https://line.me" class="hero-button">無料査定申込へ→</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="page3">
+		<div class="background">
+			<img src="img/pageHiro.png" alt="説明テキスト" class="page-image">
+			<div class="button-container">
+				<a href="https://line.me" class="line-button">LINEでサクッと！</a>
+				<a href="tel:0123456789" class="call-button">お電話はこちら！</a>
+			</div>
+		</div>
+	</section>
+	<script src="js/function.js"></script> <!-- JavaScriptファイル読み込み -->
+	<section class="purchase-items">
+		<div class="container">
+			<h2>買取品目</h2>
+			<p>ご自宅で眠っているブランド品、貴金属、ジュエリー、時計等ございましたら、<br>買取スマートにお気軽に買取をご相談ください。</p>
+
+			<ul class="items-grid4">
+				<li class="item">
+					<img src="item-images/gold.png" alt="金・プラチナ">
+					<span>金・プラチナ</span>
+				</li>
+				<li class="item">
+					<img src="item-images/diamond.png" alt="ダイヤモンド">
+					<span>ダイヤモンド</span>
+				</li>
+				<li class="item">
+					<img src="item-images/coins.png" alt="記念硬貨">
+					<span>記念硬貨</span>
+				</li>
+				<li class="item">
+					<img src="item-images/tokei.png" alt="ブランド時計">
+					<span>ブランド時計</span>
+				</li>
+				<li class="item">
+					<img src="item-images/bag.png" alt="ブランドバッグ">
+					<span>ブランドバッグ</span>
+				</li>
+				<li class="item">
+					<img src="item-images/kotto.png" alt="骨董品">
+					<span>骨董品</span>
+				</li>
+				<li class="item">
+					<img src="item-images/neckless.png" alt="アクセサリー">
+					<span>アクセサリー</span>
+				</li>
+				<li class="item">
+					<img src="item-images/kottouhin.png" alt="遺品">
+					<span>遺品</span>
+				</li>
+			</ul>
+			<ul class="items-grid5">
+				<li class="item">
+					<img src="item-images/iphon.png" alt="携帯">
+					<span>携帯</span>
+				</li>
+				<li class="item">
+					<img src="item-images/camera.png" alt="カメラ">
+					<span>カメラ</span>
+				</li>
+				<li class="item">
+					<img src="item-images/blownTV.png" alt="ブラウン管テレビ">
+					<span>ブラウン管テレビ</span>
+				</li>
+				<li class="item">
+					<img src="item-images/kimono.png" alt="着物">
+					<span>着物</span>
+				</li>
+				<li class="item">
+					<img src="item-images/brands.png" alt="その他ブランド品">
+					<span>その他ブランド品</span>
+				</li>
+			</ul>
+
+			<p class="cta">今すぐ<a href="#" class="highlight">買取依頼</a>をしたい方は<a href="#" class="highlight">こちら</a>から</p>
+		</div>
+	</section>
+
+
+	<!-- Aboutセクション全体 -->
+	<section id="about" class="about">
+		<div class="container">
+			<div class="page-image-wrapper">
+				<img src="img/AchivementNums.png" alt="実績件数" class="page-image">
+			</div>
+			<h1>買取スマートはここがすごい！</h1>
+
+			<!-- Reason 1 -->
+			<div class="reason reason-left">
+				<div class="reason-img">
+					<img src="img/first-reason.png" alt="買取スマートが選ばれる第一理由">
+				</div>
+				<div class="reason-content">
+					<div class="reason-theme-child">
+						<p>確かな鑑定眼で<br>業界査定額No1 ！</p>
+					</div>
+					<div>
+						<p>5万社を超える企業様と、弊社独自のマーケットでのエンドユーザーを持つ買取スマートだからこそ実現できるどこよりも高い高額査定が可能です。</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Reason 2 -->
+			<div class="reason reason-right">
+				<div class="reason-img">
+					<img src="img/second-reason.png" alt="買取スマートが選ばれる第二理由">
+				</div>
+				<div class="reason-content">
+					<div class="reason-theme-child">
+						<p>電話一本<br>即日出張査定！</p>
+					</div>
+					<div>
+						<p>お電話するだけで即日専門知識を持ったベテランスタッフがお伺いさせていただくので、迅速かつ正確な査定が可能です。</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Reason 3 -->
+			<div class="reason reason-left">
+				<div class="reason-img">
+					<img src="img/third-reason.png" alt="買取スマートが選ばれる第三理由">
+				</div>
+				<div class="reason-content">
+					<div class="reason-theme-child">
+						<p>安心・信頼<br>買取実績3,4000件以上！</p>
+					</div>
+					<div>
+						<p>お電話するだけで即日専門知識を持ったベテランスタッフがお伺いさせていただくので、迅速かつ正確な査定が可能です。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="free-appraisal">
+		<div class="container">
+			<div class="content-box">
+				<h2>＼カンタン／<span class="highlight">無料</span>査定！</h2>
+				<p>まずはご相談から！無理な交渉などは致しませんのでご安心ください<br>※一部、拝見しないと査定できないお品物もあります。</p>
+
+				<div class="consultation-box">
+					<p class="consultation">お電話でもメールでも<span class="highlight">ご相談受付中！</span></p>
+				</div>
+
+				<div class="contact-box">
+					<div class="phone">
+						<div class="dial-box">
+							<img src="img/dial.png" alt="フリーダイヤル">
+						</div>
+						<p class="note">[総合受付]24時間・年中無休（年末年始除く）</p>
+					</div>
+					<button class="email-button">メールでご相談</button>
+				</div>
+			</div>
+			<div class="image-box">
+				<img src="img/hiromi.png" alt="査定担当者">
+			</div>
+		</div>
+	</section>
+
+
+	<section class="purchase-results">
+		<div class="container">
+			<h2>買取実績例</h2>
+
+			<div class="results-grid">
+				<!-- Row 1 -->
+				<div class="row">
+					<div class="result-item">
+						<img src="jisseki-items/coins.png" alt="記念硬貨">
+						<div class="result-info">
+							<span class="category">硬貨</span>
+							<span class="name">【記念硬貨】</span>
+							<span class="price">買取価格 380,000円</span>
+						</div>
+					</div>
+					<div class="result-item">
+						<img src="jisseki-items/nekless.png" alt="アクセサリー">
+						<div class="result-info">
+							<span class="category">貴金属</span>
+							<span class="name">【アクセサリー】</span>
+							<span class="price">買取価格 380,000円</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2 -->
+				<div class="row">
+					<div class="result-item">
+						<img src="jisseki-items/ningyo.png" alt="人形">
+						<div class="result-info">
+							<span class="category">人形</span>
+							<span class="name">【人形】</span>
+							<span class="price">買取価格 45,000円</span>
+						</div>
+					</div>
+					<div class="result-item">
+						<img src="jisseki-items/tokei.png" alt="ブランド時計">
+						<div class="result-info">
+							<span class="category">時計</span>
+							<span class="name">【ブランド時計】</span>
+							<span class="price">買取価格 1,400,000円</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 3 -->
+				<div class="row">
+					<div class="result-item">
+						<img src="jisseki-items/kotto.png" alt="骨董品">
+						<div class="result-info">
+							<span class="category">骨董品</span>
+							<span class="name">【骨董品】</span>
+							<span class="price">買取価格 800,000円</span>
+						</div>
+					</div>
+					<div class="result-item">
+						<img src="jisseki-items/piano.png" alt="ピアノ">
+						<div class="result-info">
+							<span class="category">楽器</span>
+							<span class="name">【ピアノ】</span>
+							<span class="price">買取価格 480,000円</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 4 -->
+				<div class="row">
+					<div class="result-item">
+						<img src="jisseki-items/TV.png" alt="ブラウン管テレビ">
+						<div class="result-info">
+							<span class="category">古い家具</span>
+							<span class="name">【ブラウン管テレビ】</span>
+							<span class="price">買取価格 3,500円</span>
+						</div>
+					</div>
+					<div class="result-item">
+						<img src="jisseki-items/osake.png" alt="お酒">
+						<div class="result-info">
+							<span class="category">お酒</span>
+							<span class="name">【お酒】</span>
+							<span class="price">買取価格 90,000円</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="customer-reviews">
+		<div class="review-container">
+			<h2 class="review-title">お客様の声</h2>
+			<div class="content-wrapper">
+				<!-- レビューのスライダー -->
+				<div class="review-slider">
+					<div class="review-track">
+						<!-- クローン: 最後の要素 -->
+						<div class="review-item clone">
+							<p class="location">東京都在住 30代女性</p>
+							<h3 class="review-heading">アクセサリーの買取 ★★★★★</h3>
+							<p class="review-text">思い入れのあるアクセサリーでしたが、丁寧に査定いただき、思っていた以上の金額で買い取っていただけました。安心してお願いできました！</p>
+						</div>
+						<!-- レビュー1 -->
+						<div class="review-item">
+							<p class="location">埼玉県在住 40代男性</p>
+							<h3 class="review-heading">骨董品の買取 <span class="review-stars">★★★★★</span></h3>
+							<p class="review-text">
+								整理をお願いする業者に迷っていましたが、折り込みチラシを見て買取スマートさんに依頼。スタッフの丁寧な査定で、家の整理も進み、その場で現金買取してもらえました！大変満足です。また利用したいです。
+							</p>
+						</div>
+						<!-- レビュー2 -->
+						<div class="review-item">
+							<p class="location">栃木県在住 50代女性</p>
+							<h3 class="review-heading">人形の買取 <span class="review-stars">★★★★☆</span></h3>
+							<p class="review-text">
+								家にあった人形を買い取ってもらいました。査定額は少し低めに感じましたが、スタッフの丁寧な対応とスムーズな取引には満足しています。もう少し高ければ良かったですが、また利用するかもしれません。
+							</p>
+						</div>
+						<!-- レビュー3 -->
+						<div class="review-item">
+							<p class="location">東京都在住 30代女性</p>
+							<h3 class="review-heading">アクセサリーの買取 <span class="review-stars">★★★★★</span></h3>
+							<p class="review-text">思い入れのあるアクセサリーでしたが、丁寧に査定いただき、思っていた以上の金額で買い取っていただけました。安心してお願いできました！</p>
+						</div>
+						<!-- クローン: 最初の要素 -->
+						<div class="review-item clone">
+							<p class="location">埼玉県在住 40代男性</p>
+							<h3 class="review-heading">骨董品の買取 <span class="review-stars">★★★★★</span></h3>
+							<p class="review-text">
+								整理をお願いする業者に迷っていましたが、折り込みチラシを見て買取スマートさんに依頼。スタッフの丁寧な査定で、家の整理も進み、その場で現金買取してもらえました！大変満足です。また利用したいです。
+							</p>
+						</div>
+					</div>
+					<!-- ナビゲーションボタン -->
+					<button class="slider-button prev">&#9664;</button>
+					<button class="slider-button next">&#9654;</button>
+				</div>
+				<!-- テキストとボタン部分 -->
+				<div class="review-extra">
+					<p class="thank-you">ありがとうございます<br>多くのお客様から感謝のお言葉をいただいております</p>
+					<button class="contact-button">お問合せはこちら ＞</button>
+					<p class="disclaimer">
+						上記の口コミは、当店をご利用いただいたお客様から寄せられた実際のレビューを基にしています。お客様個人の体験に基づく感想を掲載しておりますが、一部内容を読みやすく編集させていただいている場合があります。
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/review-function.js"></script>
+
+
+	<section class="company-section">
+		<div class="container">
+			<h2 class="section-title">会社概要</h2>
+			<p class="section-subtitle">
+				買取スマートはお客様を第一に考え<br>なくてはならない存在を目指しています
+			</p>
+			<table class="company-table">
+				<tr>
+					<th>本社</th>
+					<td>〒362-0014 埼玉県上尾市本町2-12-24 菊池ビル 1F</td>
+				</tr>
+				<tr>
+					<th>東京支社</th>
+					<td>〒001-0010 北海道札幌市北区北10条西3-23-1</td>
+				</tr>
+				<tr>
+					<th>北海道支店</th>
+					<td>〒980-0021 宮城県仙台市青葉区中央2-2-30</td>
+				</tr>
+				<tr>
+					<th>仙台支店</th>
+					<td>〒221-0835 神奈川県横浜市神奈川区鶴屋町2-12-1</td>
+				</tr>
+				<tr>
+					<th>横浜支店</th>
+					<td>〒420-0858 静岡県静岡市葵区伝馬町1-2</td>
+				</tr>
+				<tr>
+					<th>静岡支店</th>
+					<td>〒556-0005 大阪府大阪市浪速区日本橋5-12-3</td>
+				</tr>
+				<tr>
+					<th>神戸支店</th>
+					<td>〒650-0012 兵庫県神戸市中央区北長狭通4-2-19</td>
+				</tr>
+				<tr>
+					<th>古物番号</th>
+					<td>431320062636</td>
+				</tr>
+				<tr>
+					<th>会社問い合わせ先</th>
+					<td>0120-914-127</td>
+				</tr>
+				<tr>
+					<th>資本金</th>
+					<td>20,000,000円（資本準備金含む）</td>
+				</tr>
+				<tr>
+					<th>従業員数</th>
+					<td>42名（業務委託、アルバイト含む）</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<!-- フッター -->
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2024 買取スマート. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
