@@ -109,7 +109,14 @@
     text-align: center;
     gap:5px;
   }
+  
+  .about{
+	  padding: 1rem 0.5rem;
+  }
  
+ .about .container{
+	 padding: 0;
+ }
 
   .about .container h1 {
     font-size: clamp(1.2rem, 3vw, 2.5rem);

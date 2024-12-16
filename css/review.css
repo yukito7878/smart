@@ -1,5 +1,5 @@
 .customer-reviews {
-  background-color: #f9f9f9;
+  background-color: #ebf5ff;
   padding: 2rem 1rem;
 }
 
@@ -166,11 +166,13 @@
 
   .thank-you {
     font-size: 1.2rem; /* モバイルで見やすいサイズ */
+    margin: 0.3rem auto;
   }
 
   .contact-button {
     width: 100%; /* ボタンを全幅に */
     max-width: 300px; /* ボタンの最大幅を設定 */
+    margin: 0.3rem auto;
   }
 
   .disclaimer {

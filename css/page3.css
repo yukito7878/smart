@@ -32,7 +32,7 @@
 .button-container {
     position: absolute;
     top: 90%; /* 背景画像内の90%の高さに配置 */
-    left: 59%; /* 背景画像内の60%の幅に配置 */
+    left: 61%; /* 背景画像内の60%の幅に配置 */
     transform: translate(-50%, -50%);
     display: flex;
     gap: 3%;
