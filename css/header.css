@@ -66,7 +66,7 @@
   text-align: center;
 }
 
-.line-button {
+header .line-button {
   background-color: #28a745;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -78,7 +78,7 @@
   margin: 0.2rem;
 }
 
-.call-button {
+header .call-button {
   background-color: #007bff;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -88,6 +88,10 @@
   font-size: 0.9rem;
   font-weight: bold;
   margin: 0.2rem;
+}
+
+header .call-button:hover {
+    background-color: #006bde;
 }
 
 /* ハンバーガーメニュー */

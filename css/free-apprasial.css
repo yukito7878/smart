@@ -26,15 +26,18 @@
 }
 
 .content-box h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .content-box h2 .highlight {
-  color: red;
+  color: #009a00;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .content-box p {
@@ -53,7 +56,7 @@
 }
 
 .consultation-box .consultation {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: white;
 }
@@ -86,7 +89,7 @@
 }
 
 .email-button {
-  background-color: #007bff;
+  background-color: #28a745;
   color: #fff;
   padding: 0.6rem 1.2rem;
   border: none;
