@@ -21,7 +21,7 @@
 }
 
 /* 背景画像 */
-.page-image {
+.page3 .page-image {
     width: 100%; /* 親要素にフィット */
     height: auto;
     display: block;
@@ -31,7 +31,7 @@
 /* ボタンコンテナ */
 .button-container {
     position: absolute;
-    top: 90%; /* 背景画像内の90%の高さに配置 */
+    top: 89%; /* 背景画像内の90%の高さに配置 */
     left: 61%; /* 背景画像内の60%の幅に配置 */
     transform: translate(-50%, -50%);
     display: flex;

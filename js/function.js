@@ -5,9 +5,9 @@ function adjustButtonSize() {
 
     // ボタンのサイズを背景画像の幅に比例させる
     buttons.forEach(button => {
-        const baseFontSize = 18; // 基準フォントサイズ（px）
+        const baseFontSize = 25; // 基準フォントサイズ（px）
         const basePaddingY = 13; // 基準上下パディング（px）
-        const basePaddingX = 23; // 基準左右パディング（px）
+        const basePaddingX = 25; // 基準左右パディング（px）
 
         // 幅に応じたサイズを計算
         const scaleFactor = backgroundWidth / 1263; // 1263px を基準としたスケール
