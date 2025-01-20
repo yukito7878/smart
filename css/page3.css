@@ -1,0 +1,109 @@
+/* セクション全体 */
+
+.page3 {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	/* はみ出しを隠す */
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.page3_phone {
+	display: none;
+}
+
+.page3_pc {
+	display: block;
+}
+
+/* 背景画像の親要素 */
+.background {
+	position: relative;
+	width: 100%;
+	max-width: 1263px;
+	/* 最大幅を設定 */
+	margin: auto;
+	height: auto;
+}
+
+/* 背景画像 */
+.page3 .page-image {
+	width: 100%;
+	/* 親要素にフィット */
+	height: auto;
+	display: block;
+	position: relative;
+	/* ボタン基準を背景画像に設定 */
+}
+
+/* ボタンコンテナ */
+.button-container {
+	position: absolute;
+	top: 87%;
+	/* 背景画像内の90%の高さに配置 */
+	left: 42%;
+	/* 背景画像内の60%の幅に配置 */
+	display: flex;
+	gap: 3%;
+	z-index: 2;
+}
+
+/* ボタン共通スタイル */
+.line-button,
+.call-button {
+	background-color: #00c300;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.3rem;
+	/* 初期値 */
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 0.85em 2.3em;
+	/* 初期値 */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	margin: 0;
+}
+
+.call-button {
+	background-color: #ff4d4d;
+}
+
+.line-button:hover {
+	background-color: #009a00;
+}
+
+.call-button:hover {
+	background-color: #e63939;
+}
+
+/* タブレットやスマホ（PCサイズ未満） */
+@media (max-width: 1023px) {
+	.page3_phone {
+		display: flex;
+	}
+	.page3_pc {
+		display: none;
+	}
+	.button-container {
+		position: absolute;
+		top: 75.5%;
+		/* 背景画像内の90%の高さに配置 */
+		left: 49.5%;
+		/* 背景画像内の60%の幅に配置 */
+		display: flex;
+		flex-direction: column;
+		gap: 8.5px;
+		z-index: 2;
+	}
+	
+	.line-button,
+	.call-button {
+		font-size: 2rem;
+		padding: 0.5rem 1em;
+	}
+}

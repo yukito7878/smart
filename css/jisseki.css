@@ -1,0 +1,252 @@
+.purchase-results {
+	background-color: #fff;
+	padding: 2rem 1rem;
+	text-align: center;
+}
+
+.purchase-results .container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.purchase-results h2 {
+	font-size: 2.5rem;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+/* グリッド部分 */
+.results-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	/* 複数行対応 */
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.result-item {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	flex: 1 1 calc(20% - 2rem);
+	/* 5列にする確実な計算 */
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	padding: 0.3rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-item img {
+	flex-shrink: 0;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+
+.result-info {
+	font-size: 0.65rem;
+	text-align: left;
+}
+
+.result-info .category {
+	display: inline-block;
+	background-color: #002b80;
+	color: #fff;
+	font-weight: bold;
+	padding: 0.3rem 0.3rem;
+	margin-bottom: 1rem;
+	font-size: 0.65rem;
+}
+
+.result-info .name {
+	display: block;
+	font-weight: bold;
+	font-size: 0.65rem;
+}
+
+.result-info .price {
+	color: #333;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.results-grid::after {
+	display: none;
+	/* ぼかしを表示 */
+}
+
+
+/* グリッド設定 */
+.results-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 10px;
+	position: relative;
+	/* 初期表示の最大高さ */
+	overflow: hidden;
+	/* スクロール部分を隠す */
+}
+
+/* ボタンスタイル */
+.toggle-buttons {
+	text-align: center;
+	margin-top: 20px;
+	display: none;
+}
+
+.toggle-buttons button {
+	margin: 5px auto;
+	/* ボタン間の均等な余白と中央揃え */
+	padding: 10px 20px;
+	/* ボタンの内側余白 */
+	font-size: 16px;
+	/* ボタン文字サイズ */
+	display: inline-block;
+	/* ブロック要素として扱う */
+	border: none;
+	/* ボーダーを消す */
+	border-radius: 5px;
+	/* 角丸 */
+	cursor: pointer;
+	/* ポインタを指示 */
+}
+
+.show-more-btn {
+	background-color: #007bff;
+	color: white;
+}
+
+.show-more-btn:hover {
+	background-color: #0056b3;
+}
+
+.show-less-btn {
+	background-color: #dc3545;
+	color: white;
+}
+
+.show-less-btn:hover {
+	background-color: #a71d2a;
+}
+
+/* 開いた状態でぼかしを消す */
+.results-grid.open {
+	max-height: none;
+	overflow: visible;
+}
+
+.results-grid.open::after {
+	display: none;
+}
+
+.toggle-buttons {
+	display: none;
+	/* 初期状態で非表示 */
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+
+	/* ボタンを表示 */
+	.toggle-buttons {
+		display: block;
+		/* ボタンを表示 */
+		text-align: center;
+		/* ボタンを中央揃え */
+		margin-top: 20px;
+	}
+
+	/* ぼかしを表示 */
+	.results-grid {
+		max-height: 600px;
+		/* 初期表示の高さを設定 */
+		overflow: hidden;
+		/* はみ出し部分を隠す */
+		position: relative;
+		/* ぼかしの位置調整に必要 */
+	}
+
+	.row {
+		flex-wrap: wrap;
+		gap: 0.2rem;
+	}
+
+	.results-grid {
+		max-height: 400px;
+		/* 最大表示の高さを設定 */
+		overflow: hidden;
+		/* スクロール部分を隠す */
+	}
+
+	/* ぼかし */
+	.results-grid::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+		pointer-events: none;
+		display: block;
+	}
+
+	.show-more-btn {
+		display: block;
+		margin: 20px auto;
+		padding: 10px 20px;
+		text-align: center;
+		background-color: #007bff;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+	}
+
+	.show-more-btn:hover {
+		background-color: #0056b3;
+	}
+
+	.result-item {
+		flex: 1 1 calc(50% - 5rem);
+		/* スマホ画面では2列 */
+		padding: 0.5rem;
+		gap: 1rem;
+	}
+
+	.result-item img {
+		width: 70px;
+		height: 70px;
+	}
+
+	.result-info {
+		font-size: 0.5rem;
+	}
+
+	.result-info .category {
+		display: inline-block;
+		background-color: #002b80;
+		color: #fff;
+		font-weight: bold;
+		padding: 0.3rem 0.3rem;
+		margin-bottom: 0.4rem;
+		font-size: 0.5rem;
+	}
+
+	.result-info .name {
+		font-size: 0.6rem;
+	}
+
+	.result-info .price {
+		font-size: 0.8rem;
+	}
+}

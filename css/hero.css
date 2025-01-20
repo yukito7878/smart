@@ -1,0 +1,97 @@
+/* ヒーローセクション全体 */
+.hero {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero_phone {
+	display: none;
+}
+
+/* 背景エリア */
+.heroBackground {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+/* 中央の画像 */
+.heropage-image {
+	max-width: 1263px;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	display: block;
+	position: relative;
+	/* ボタン配置の基準要素 */
+	z-index: 2;
+}
+
+/* ボタンコンテナ */
+.hero-button-container {
+	position: absolute;
+	top: 86%;
+	/* 画像の中でボタンを配置 */
+	left: 57.5%;
+	/* 画像の中央揃え */
+	transform: translate(-50%, -50%);
+	/* 完全な中央揃え */
+	z-index: 3;
+	/* 背景画像より前面 */
+}
+
+/* ボタンデザイン */
+.hero-button {
+	display: inline-block;
+	background-color: #ff4d4d;
+	color: white;
+	padding: calc(10px + 0.5vw) calc(20px + 1vw);
+	font-size: calc(1.2rem + 0.2vw);
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ボタンホバー時の効果 */
+.hero-button:hover {
+	background-color: #e63939;
+	transform: scale(1.1);
+}
+
+/* PCサイズ（通常のラップトップ画面） */
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.hero-button-container {
+		top: 85.5%;
+		/* PCでは少し下寄り */
+		left: 64%;
+	}
+}
+
+/* タブレットやスマホ（PCサイズ未満） */
+@media (max-width: 1023px) {
+	.hero_phone {
+		display: flex;
+	}
+	.hero_pc{
+		display: none;
+	}
+	
+	.hero-button-container {
+		top: 86%;
+		/* モバイルでは画像の下部に配置 */
+		left: 64%;
+	}
+
+	.hero-button {
+		font-size: calc(1rem + 0.2vw);
+		/* ボタン文字サイズを縮小 */
+		padding: calc(8px + 0.5vw) calc(16px + 1vw);
+		/* パディングを縮小 */
+	}
+}
