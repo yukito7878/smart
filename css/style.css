@@ -107,7 +107,7 @@ ul {
 /* 著作権表示のスタイル */
 .footer p {
     margin: 0; /* デフォルトのマージンを削除 */
-    font-family: "Noto Serif JP", serif; /* 明朝体風フォント（任意） */
+    font-family: Noto Sans JP, sans-serif;
 }
 
 
