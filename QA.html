@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>出張買取サービス - Q&A</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<style>
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+			border-radius: 10px;
+		}
+
+		h1 {
+			font-size: 36px;
+		}
+
+		.qa {
+			text-align: left;
+			color: black;
+			padding: 20px;
+			border-radius: 10px;
+			margin-top: 20px;
+		}
+
+		.qa-container {
+			display: flex;
+		}
+		
+		.qa-title-container{
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+			margin-right: 30px;
+			margin-top: 20px;
+		}
+		
+		.qa-icon{
+			width: 80px;
+			height: 80px;
+		}
+
+		.qa h2 {
+			color: #b30000;
+		}
+
+		.qa-item {
+			margin-bottom: 20px;
+			flex: 1 1 calc(50% - 10px);
+			background-color: white;
+			position: relative;
+			padding: 15px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+		}
+
+		.qa-item::before {
+			content: "Q";
+			position: absolute;
+			top: 10px;
+			left: -10px;
+			background-color: #f4b400;
+			color: white;
+			font-weight: bold;
+			padding: 5px 10px;
+			border-radius: 5px;
+		}
+
+		.qa-item strong {
+			display: block;
+			font-size: 18px;
+			margin-left: 20px;
+			margin-bottom: 5px;
+			color: #b30000;
+		}
+
+
+
+		h1 {
+			font-size: 36px;
+		}
+
+		.qa {
+			text-align: left;
+			color: black;
+			padding: 20px;
+			border-radius: 10px;
+			margin-top: 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+
+		.qa h2 {
+			color: #b30000;
+			width: 100%;
+		}
+
+		.qa-item {
+			flex: 1 1 calc(50% - 10px);
+			position: relative;
+			padding: 15px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-sizing: border-box;
+		}
+
+		.qa-item::before {
+			content: "Q";
+			position: absolute;
+			top: 10px;
+			left: -10px;
+			background-color: #f4b400;
+			color: white;
+			font-weight: bold;
+			padding: 5px 10px;
+			border-radius: 5px;
+		}
+
+		.qa-item strong {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 5px;
+			color: #b30000;
+		}
+
+		@media (max-width: 600px) {
+			.qa-item {
+				flex: 1 1 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-logo">
+				<img src="img/smartLogo.png" alt="買取スマートロゴ" />
+			</div>
+			<div class="header-contact">
+				<span>受付時間 9:00〜18:00（年中無休）</span>
+				<a href="https://lin.ee/xbqQiAp" class="line-button">LINEで無料査定</a>
+				<a href="tel:0120-853-449" class="call-button">0120-853-449</a>
+			</div>
+			<div class="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<nav class="header-nav">
+			<ul>
+				<li><a href="index.html#">ホーム</a></li>
+				<li><a href="index.html#about">サービス内容</a></li>
+				<li><a href="index.html#hero">お問い合わせ</a></li>
+				<li><a href="QA.html">Q&A</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="qa-title-container">
+			<img src="img/qa_icon.png" class="qa-icon">
+			<h1 class="qa-title">よくあるご質問、お答えします！</h1>
+		</div>
+		
+		<div class="qa">
+			<div class="qa-item">
+				<strong>査定は無料ですか？</strong>
+				<p>A, はい。完全に無料です。買取業者なので、お客様からお金をいただくことは一切ございません。ご安心してご予約お願いいたします。</p>
+			</div>
+
+			<div class="qa-item">
+				<strong>自宅まで来てくれますか？</strong>
+				<p>A, はい。出張買取専門業者のため、ご自宅までお伺いさせていただきますので、ご安心ください。</p>
+			</div>
+
+			<div class="qa-item">
+				<strong>怪しい業者ではありませんか？</strong>
+				<p>A, もちろんでございます。弊社は、古物商の免許を所得しており、特商法始め、法律に則り運営しております。お客様の信頼信用を第一に考えておりますので、ご安心ください。</p>
+			</div>
+
+			<div class="qa-item">
+				<strong>納得のいく金額じゃなかったら、売らなくてもいいの？</strong>
+				<p>A, 可能です。弊社もお客様のご納得される金額をご提示させていただきますが、それでもまだ売りたくない商品などは、断っていただいても問題ございません。その際の料金などももちろん発生いたしません。
+				</p>
+			</div>
+
+			<div class="qa-item">
+				<strong>LINE査定だけでも可能ですか？</strong>
+				<p>A, ライン査定は、あくまで概算になります。一度、お品物を直接拝見させていただきまして、直接現金買取させていただきます。</p>
+			</div>
+			<div class="qa-item">
+				<strong>買取対象の商品に制限はありますか？</strong>
+				<p>A,
+					はい。一部の品目については買取できない場合がございます。例えば、法律に抵触する品目、偽造品、著しく破損しているものなどは買取対象外となります。
+				</p>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2024 買取スマート. All rights reserved.</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

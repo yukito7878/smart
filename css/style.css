@@ -1,0 +1,114 @@
+/* グローバルスタイル */
+body {
+  margin: 0;
+  font-family: Noto Sans JP, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+h1, h2, h3 {
+  color: #007BFF;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav a {
+  margin: 0 15px;
+  font-size: 1em;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #007BFF;
+}
+
+/* ヒーローセクション */
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ads {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 縦方向も中央揃え */
+    max-width: 100%;
+    background-color: #fff;
+	margin: 1.5rem auto;
+}
+
+.ads .ads__hiromi {
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center;    /* 縦方向の中央揃え */
+    width: 100%;
+    height: 100%;
+}
+
+.ads__hiromi-hiromi {
+    max-width: 100%; /* 親要素の幅に合わせる */
+    height: auto; /* アスペクト比を保つ */
+}
+
+
+/* フッター全体のスタイル */
+.footer {
+    background-color: #333; /* 背景色（ダークグレー） */
+    color: #fff; /* 文字色（白） */
+    text-align: center; /* 中央揃え */
+    padding: 15px 0; /* 上下に余白 */
+    font-size: 14px; /* 文字サイズ */
+    line-height: 1.6; /* 行間 */
+}
+
+/* コンテナの中央揃え */
+.footer .container {
+    max-width: 1000px; /* 最大幅 */
+    margin: 0 auto; /* 水平中央揃え */
+    padding: 0 20px; /* コンテンツ左右に余白 */
+    box-sizing: border-box;
+}
+
+/* 著作権表示のスタイル */
+.footer p {
+    margin: 0; /* デフォルトのマージンを削除 */
+    font-family: Noto Sans JP, sans-serif;
+}
+
+
+
