@@ -18,16 +18,16 @@
 		.qa-container {
 			display: flex;
 		}
-		
-		.qa-title-container{
+
+		.qa-title-container {
 			display: flex;
 			gap: 20px;
 			justify-content: center;
 			margin-right: 30px;
 			margin-top: 20px;
 		}
-		
-		.qa-icon{
+
+		.qa-icon {
 			width: 80px;
 			height: 80px;
 		}
@@ -82,14 +82,14 @@
 		}
 
 		@media (max-width: 600px) {
-			h1{
+			h1 {
 				margin: auto 0;
 			}
-			
-			.qa-title-container{
+
+			.qa-title-container {
 				margin-right: 0;
 			}
-			
+
 			.qa-item {
 				flex: 1 1 100%;
 				background-color: white;
@@ -125,12 +125,22 @@
 		</nav>
 	</header>
 
+	<script>
+		// ハンバーガーメニューのトグル
+		const hamburger = document.querySelector('.hamburger-menu');
+		const nav = document.querySelector('.header-nav');
+
+		hamburger.addEventListener('click', () => {
+			nav.classList.toggle('active');
+		});
+	</script>
+
 	<div class="container">
 		<div class="qa-title-container">
 			<img src="img/qa_icon.png" class="qa-icon">
 			<h1 class="qa-title">よくあるご質問、お答えします！</h1>
 		</div>
-		
+
 		<div class="qa">
 			<div class="qa-item">
 				<strong>査定は無料ですか？</strong>
