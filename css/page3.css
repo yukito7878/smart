@@ -54,6 +54,7 @@
 .line-button,
 .call-button {
 	background-color: #00c300;
+	text-align: center;
 	color: white;
 	border: none;
 	border-radius: 5px;
