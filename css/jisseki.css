@@ -1,5 +1,9 @@
+.item-results_title{
+	width: 80%;
+}
+
 .purchase-results {
-	background-color: #fff;
+	background-color: #ece3e3;
 	padding: 2rem 1rem;
 	text-align: center;
 }

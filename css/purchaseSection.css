@@ -1,8 +1,14 @@
+.purchase-items_title{
+	margin: auto;
+	width: 100%;
+}
+
 /* 基本スタイル */
 .purchase-items {
-	background-color: #f2f2f2;
+	background-color: #ffc74e;
 	padding: 2rem 1rem;
 	text-align: center;
+	padding-top: 0;
 }
 
 .purchase-items .container {
@@ -21,6 +27,7 @@
 	font-size: 1rem;
 	color: #555;
 	margin-bottom: 2rem;
+	font-weight: bold;
 }
 
 /* 共通のグリッドスタイル */
@@ -73,13 +80,22 @@
 	font-size: 1.7rem;
 	font-weight: bold;
 	color: #333;
-	margin-top: 2rem;
+	margin-top: 0;
 }
 
 .cta .highlight {
 	color: red;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.item_subtitle{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.cta{
+	width: 100%;
 }
 
 /* レスポンシブ対応: 画面幅縮小時の調整 */
@@ -98,7 +114,7 @@
 	}
 
 	.purchase-items p {
-		font-size: 0.6rem;
+		font-size: 0.9rem;
 		/* 説明文を縮小 */
 		margin-bottom: 0.6rem;
 	}
@@ -115,24 +131,28 @@
 	}
 
 	.item {
-		padding: 0.5rem;
+		padding: 0.3rem;
 		/* 各アイテムの余白を縮小 */
 	}
 
 	.item span {
-		font-size: 0.5rem;
+		font-size: 0.55rem;
 		/* アイテム内の文字サイズを縮小 */
 		margin-top: 0;
+		font-weight: bold;
 	}
 
 	.purchase-items .cta {
 		font-size: 1.2rem;
 		font-weight: bold;
 		color: #333;
-		margin-top: 2rem;
 	}
 	
 	.item_hide{
 		display: none;
 	}
+}
+
+.item_subtitle{
+	max-width: 900px;
 }

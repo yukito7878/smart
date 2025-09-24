@@ -10,6 +10,13 @@
 	background-color: white;
 }
 
+.jisseki-image{
+	width: 80%;
+	margin: 10px auto;
+	display: flex;
+	max-width: 1263px;
+}
+
 .page3_phone {
 	display: none;
 }
@@ -22,7 +29,7 @@
 .background {
 	position: relative;
 	width: 100%;
-	max-width: 1263px;
+	max-width: 1100px;
 	/* 最大幅を設定 */
 	margin: auto;
 	height: auto;
@@ -41,7 +48,7 @@
 /* ボタンコンテナ */
 .button-container {
 	position: absolute;
-	top: 87%;
+	top: 84%;
 	/* 背景画像内の90%の高さに配置 */
 	left: 42%;
 	/* 背景画像内の60%の幅に配置 */
@@ -92,7 +99,7 @@
 	}
 	.button-container {
 		position: absolute;
-		top: 75.5%;
+		top: 71.5%;
 		/* 背景画像内の90%の高さに配置 */
 		left: 49.5%;
 		/* 背景画像内の60%の幅に配置 */

@@ -4,6 +4,13 @@
 	font-family: "Hiragino Mincho Pro", serif;
 }
 
+.threeReasons{
+	width: 80%;
+	max-width: 1100px;
+	display: flex;
+	margin:auto;
+}
+
 /* コンテナのスタイル */
 .about .container {
 	max-width: 1263px;
