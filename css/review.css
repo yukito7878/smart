@@ -5,6 +5,7 @@
 .customer-reviews {
 	background-color: #f7f7f7;
 	padding: 2rem 1rem;
+	padding-bottom: 0;
 }
 
 .review-container {
@@ -140,7 +141,7 @@
 
 /* テキストとボタン部分 */
 .review-extra {
-	flex: 0 0 35%;
+	flex: 0 0 47%;
 	text-align: left;
 }
 
@@ -236,8 +237,5 @@
 		width: 30px;
 		height: 30px;
 		/* ボタンも小型化 */
-	}
-	.review-extra{
-		display: none;
 	}
 }

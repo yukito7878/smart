@@ -5,9 +5,7 @@
 	justify-content: center;
 	text-align: center;
 	padding: 2rem 1rem;
-	background: #f9f9f9;
 	border-radius: 12px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .buy-cta__image {
@@ -44,4 +42,22 @@
 	.buy-cta__button{
 		font-size: 1.5rem;
 	}
+}
+
+
+
+
+.item-cta {
+  background: url("../img/item_cta_bg.png") no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0.5rem; /* 上下に余白 */
+  }
+
+.item-cta__image {
+  max-width: 1100px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
