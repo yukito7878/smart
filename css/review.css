@@ -237,4 +237,7 @@
 		height: 30px;
 		/* ボタンも小型化 */
 	}
+	.review-extra{
+		display: none;
+	}
 }
