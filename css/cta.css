@@ -7,23 +7,31 @@
 	border-radius: 12px;
 }
 
-.campaign_cta{
+.campaign_cta {
 	display: block;
 	max-width: 1300px;
 	width: 85%;
-	margin:auto;
+	margin: auto;
 	margin-top: 1rem;
 }
 
 .buy-cta__image {
-	margin:auto;
+	margin: auto;
+	margin-top: 1rem;
+	width: 80%;
+	max-width: 1300px;
+}
+
+
+.buy-cta__image_B {
+	margin: auto;
 	margin-top: 1rem;
 	width: 80%;
 	max-width: 1300px;
 }
 
 .buy-cta__content {
-	margin:auto;
+	margin: auto;
 	margin-top: 1rem;
 }
 
@@ -48,7 +56,7 @@
 	.buy-cta__image {
 		width: 90%;
 	}
-	
+
 	.buy-cta__image_B {
 		width: 100%;
 		max-width: 1300px;
