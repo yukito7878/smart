@@ -12,10 +12,10 @@
 }
 
 .jisseki-image{
-	width: 80%;
+	width: 100%;
 	margin: 10px auto;
 	display: flex;
-	max-width: 1263px;
+	max-width: 1300px;
 }
 
 .page3_phone {
@@ -30,7 +30,7 @@
 .background {
 	position: relative;
 	width: 100%;
-	max-width: 1100px;
+	max-width: 1300px;
 	/* 最大幅を設定 */
 	margin: auto;
 	height: auto;
