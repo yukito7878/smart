@@ -69,6 +69,20 @@
 
 
 
+.achivement {
+	background-color: #fcaf10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 上下に余白 */
+}
+
+.achivementNums_image {
+	max-width: 1300px;
+	width: 95%;
+	height: auto;
+	display: block;
+}
 
 .item-cta {
 	background-color: #fcaf10;
