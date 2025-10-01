@@ -4,7 +4,19 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	border-radius: 12px;
+	padding-bottom: 40px;
+	background: linear-gradient(to bottom,
+			#ffffff 0%,
+			#ffffff 85%,
+			#fcaf10 100%);
+}
+
+.buy-cta2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
 .campaign_cta {
@@ -51,6 +63,47 @@
 	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+.achivement {
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 上下に余白 */
+	background: linear-gradient(to bottom,
+			#ffffff 0%,
+			#fcaf10 50%,
+			#ffffff 100%);
+	padding: 50px 0;
+}
+
+.achivementNums_image {
+	max-width: 1300px;
+	width: 95%;
+	height: auto;
+	display: block;
+}
+
+.item-cta {
+	background: linear-gradient(to bottom,
+			#ffffff 0%,
+			#fcaf10 15%,
+			#fcaf10 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 上下に余白 */
+	padding-top: 80px;
+
+}
+
+.item-cta__image {
+	max-width: 1300px;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
 	.buy-cta__image {
@@ -65,36 +118,73 @@
 	.buy-cta__button {
 		font-size: 1.5rem;
 	}
+
+	.achivementNums_image {
+		max-width: 1300px;
+		width: 60%;
+		height: auto;
+		display: block;
+	}
+
 }
 
 
 
-.achivement {
-	background-color: #fcaf10;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* 上下に余白 */
+/* ===== Banner base ===== */
+.promo-banner {
+	position: fixed;
+	left: 16px;
+	bottom: 16px;
+	z-index: 2147483000;
+	/* 最前面に近い */
+	display: inline-block;
+	text-decoration: none;
+	line-height: 0;
+	/* 画像周りの余白を無くす */
+	border-radius: 12px;
+	/* お好みで角丸 */
+	overflow: hidden;
+	background: transparent;
 }
 
-.achivementNums_image {
-	max-width: 1300px;
-	width: 95%;
-	height: auto;
+/* PC時のサイズ（必要に応じて調整）*/
+.promo-banner img {
 	display: block;
-}
-
-.item-cta {
-	background-color: #fcaf10;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* 上下に余白 */
-}
-
-.item-cta__image {
-	max-width: 1300px;
-	width: 100%;
+	width: 320px;
+	/* 画像の表示幅（デスクトップ） */
 	height: auto;
-	display: block;
+	/* 縦横比を維持 */
+}
+
+/* ===== Hover（PCのみ効く）===== */
+@media (hover:hover) and (pointer:fine) {
+	.promo-banner:hover {
+		transform: translateY(-2px);
+		transition: transform .2s ease;
+	}
+}
+
+/* ===== Mobile（幅 ≤ 768px 想定）===== */
+@media (max-width: 768px) {
+	.promo-banner {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		border-radius: 0;
+		/* iPhoneのホームバー回避 */
+		padding-bottom: env(safe-area-inset-bottom, 0);
+		/* 透過PNGの下地が必要なら */
+	}
+
+	.promo-banner img {
+		width: 100%;
+		/* 画面幅いっぱい */
+		max-width: 100%;
+		/* はみ出し防止 */
+		height: auto;
+	}
+	.footer{
+		padding-bottom: 100px;
+	}
 }

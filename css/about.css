@@ -1,6 +1,12 @@
 .about {
 	background-color: #f7f7f7;
 	font-family: "Hiragino Mincho Pro", serif;
+	background: linear-gradient(
+	  to bottom,
+	  #fcaf10 0%,
+	  #fcaf10 70%,
+	  #ffe9b9 100%
+	);
 }
 
 .threeReasons{
@@ -21,7 +27,6 @@
 .page-image-wrapper {
 	display: flex;
 	justify-content: center;
-	margin-top: 3rem;
 }
 
 .page-image {
