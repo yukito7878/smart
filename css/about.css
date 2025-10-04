@@ -76,7 +76,7 @@
 }
 
 .reason-theme-child {
-	background-color: #004aad;
+	background: rgba(0, 91, 187, 0.85);
 	color: white;
 	font-weight: bold;
 	border-radius: 4px;
