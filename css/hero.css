@@ -1,6 +1,30 @@
 /* ヒーローセクション全体 */
-.hero {
+
+.heroBackground {
 	position: relative;
+	/* 子要素のabsolute配置を有効にする */
+}
+
+.invisible-button {
+	position: absolute;
+	bottom: 6%;
+	/* 下からの位置 */
+	right: 54.5%;
+	/* 右からの位置 */
+	width: 135px;
+	/* ボタンの横幅 */
+	height: 60px;
+	/* ボタンの高さ */
+	display: block;
+	cursor: pointer;
+
+	/* ボタンを見えなくする */
+	background: transparent;
+	z-index: 10;
+	
+}
+
+.hero {
 	width: 100%;
 	overflow: hidden;
 	display: flex;
@@ -79,10 +103,11 @@
 	.hero_phone {
 		display: flex;
 	}
-	.hero_pc{
+
+	.hero_pc {
 		display: none;
 	}
-	
+
 	.hero-button-container {
 		top: 86%;
 		/* モバイルでは画像の下部に配置 */
@@ -95,4 +120,24 @@
 		padding: calc(8px + 0.5vw) calc(16px + 1vw);
 		/* パディングを縮小 */
 	}
+	
+	.invisible-button {
+		position: absolute;
+		bottom: 5.5%;
+		/* 下からの位置 */
+		right: 52%;
+		/* 右からの位置 */
+		width: 50px;
+		/* ボタンの横幅 */
+		height: 20px;
+		/* ボタンの高さ */
+		display: block;
+		cursor: pointer;
+
+		/* ボタンを見えなくする */
+		background: transparent;
+		z-index: 10;
+		
+	}
+
 }
