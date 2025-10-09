@@ -1,10 +1,11 @@
 .about {
 	background-color: #f7f7f7;
 	font-family: "Hiragino Mincho Pro", serif;
+	padding-top: 50px;
 	background: linear-gradient(
 	  to bottom,
-	  #fcaf10 0%,
-	  #fcaf10 70%,
+	  rgb(255, 255, 255) 2%,
+	  #fcaf10 10%,
 	  #ffe9b9 100%
 	);
 }
@@ -132,6 +133,7 @@
 
 	.about {
 		padding: 1rem 0.5rem;
+		padding-top: 70px;
 	}
 
 	.about .container {
