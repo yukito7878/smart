@@ -7,13 +7,13 @@
 
 .invisible-button {
 	position: absolute;
-	bottom: 6%;
+	bottom: 2%;
 	/* 下からの位置 */
-	right: 6%;
+	left: 1%;
 	/* 右からの位置 */
-	width: 750px;
+	width: 460px;
 	/* ボタンの横幅 */
-	height: 160px;
+	height: 150px;
 	/* ボタンの高さ */
 	display: block;
 	cursor: pointer;
