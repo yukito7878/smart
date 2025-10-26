@@ -122,22 +122,11 @@
 	}
 	
 	.invisible-button {
-		position: absolute;
-		bottom: 5.5%;
-		/* 下からの位置 */
-		right: 1%;
-		/* 右からの位置 */
-		width: 245px;
-		/* ボタンの横幅 */
-		height: 50px;
-		/* ボタンの高さ */
-		display: block;
-		cursor: pointer;
-
-		/* ボタンを見えなくする */
-		background: transparent;
-		z-index: 10;
-		
+		display: none;
+	}
+	
+	.fv_number{
+		width: 100%;
 	}
 
 }
