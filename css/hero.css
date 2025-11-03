@@ -21,7 +21,31 @@
 	/* ボタンを見えなくする */
 	background: transparent;
 	z-index: 10;
-	
+
+}
+
+.item-cta {
+	position: relative;
+	display: inline-block;
+}
+
+.invisible-button_cta {
+	position: absolute;
+	bottom: 56%;
+	/* 下からの位置 */
+	left: 21%;
+	/* 右からの位置 */
+	width: 965px;
+	/* ボタンの横幅 */
+	height: 140px;
+	/* ボタンの高さ */
+	display: block;
+	cursor: pointer;
+
+	/* ボタンを見えなくする */
+	background: transparent;
+	z-index: 10;
+
 }
 
 .hero {
@@ -120,13 +144,24 @@
 		padding: calc(8px + 0.5vw) calc(16px + 1vw);
 		/* パディングを縮小 */
 	}
-	
+
 	.invisible-button {
 		display: none;
 	}
-	
-	.fv_number{
+
+	.fv_number {
 		width: 100%;
+	}
+	
+	.invisible-button_cta {
+		bottom: 55.3%;
+		/* 下からの位置 */
+		left: 21%;
+		/* 右からの位置 */
+		width: 320px;
+		/* ボタンの横幅 */
+		height: 45px;
+
 	}
 
 }
